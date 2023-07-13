@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6EC66A812A5F7BCB00AA1B98 /* Rethink_Test_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC66A802A5F7BCB00AA1B98 /* Rethink_Test_ProjectApp.swift */; };
+		6EC66A832A5F7BCB00AA1B98 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC66A822A5F7BCB00AA1B98 /* ContentView.swift */; };
+		6EC66A852A5F7BCB00AA1B98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EC66A842A5F7BCB00AA1B98 /* Assets.xcassets */; };
+		6EC66A882A5F7BCB00AA1B98 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EC66A872A5F7BCB00AA1B98 /* Preview Assets.xcassets */; };
+		6EC66A932A5F7BCC00AA1B98 /* Rethink_Test_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC66A922A5F7BCC00AA1B98 /* Rethink_Test_ProjectTests.swift */; };
+		6EC66A9E2A5F7BCC00AA1B98 /* Rethink_Test_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC66A9D2A5F7BCC00AA1B98 /* Rethink_Test_ProjectUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6EC66A8F2A5F7BCC00AA1B98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EC66A752A5F7BCB00AA1B98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EC66A7C2A5F7BCB00AA1B98;
+			remoteInfo = "Rethink Test Project";
+		};
+		6EC66A9A2A5F7BCC00AA1B98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EC66A752A5F7BCB00AA1B98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EC66A7C2A5F7BCB00AA1B98;
+			remoteInfo = "Rethink Test Project";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6EC66A7D2A5F7BCB00AA1B98 /* Rethink Test Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rethink Test Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EC66A802A5F7BCB00AA1B98 /* Rethink_Test_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rethink_Test_ProjectApp.swift; sourceTree = "<group>"; };
+		6EC66A822A5F7BCB00AA1B98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6EC66A842A5F7BCB00AA1B98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6EC66A872A5F7BCB00AA1B98 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6EC66A892A5F7BCB00AA1B98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EC66A8E2A5F7BCC00AA1B98 /* Rethink Test ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rethink Test ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EC66A922A5F7BCC00AA1B98 /* Rethink_Test_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rethink_Test_ProjectTests.swift; sourceTree = "<group>"; };
+		6EC66A942A5F7BCC00AA1B98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EC66A992A5F7BCC00AA1B98 /* Rethink Test ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rethink Test ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EC66A9D2A5F7BCC00AA1B98 /* Rethink_Test_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rethink_Test_ProjectUITests.swift; sourceTree = "<group>"; };
+		6EC66A9F2A5F7BCC00AA1B98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EC66A7A2A5F7BCB00AA1B98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EC66A8B2A5F7BCC00AA1B98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EC66A962A5F7BCC00AA1B98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6EC66A742A5F7BCB00AA1B98 = {
+			isa = PBXGroup;
+			children = (
+				6EC66A7F2A5F7BCB00AA1B98 /* Rethink Test Project */,
+				6EC66A912A5F7BCC00AA1B98 /* Rethink Test ProjectTests */,
+				6EC66A9C2A5F7BCC00AA1B98 /* Rethink Test ProjectUITests */,
+				6EC66A7E2A5F7BCB00AA1B98 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6EC66A7E2A5F7BCB00AA1B98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EC66A7D2A5F7BCB00AA1B98 /* Rethink Test Project.app */,
+				6EC66A8E2A5F7BCC00AA1B98 /* Rethink Test ProjectTests.xctest */,
+				6EC66A992A5F7BCC00AA1B98 /* Rethink Test ProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6EC66A7F2A5F7BCB00AA1B98 /* Rethink Test Project */ = {
+			isa = PBXGroup;
+			children = (
+				6EC66A802A5F7BCB00AA1B98 /* Rethink_Test_ProjectApp.swift */,
+				6EC66A822A5F7BCB00AA1B98 /* ContentView.swift */,
+				6EC66A842A5F7BCB00AA1B98 /* Assets.xcassets */,
+				6EC66A892A5F7BCB00AA1B98 /* Info.plist */,
+				6EC66A862A5F7BCB00AA1B98 /* Preview Content */,
+			);
+			path = "Rethink Test Project";
+			sourceTree = "<group>";
+		};
+		6EC66A862A5F7BCB00AA1B98 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6EC66A872A5F7BCB00AA1B98 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6EC66A912A5F7BCC00AA1B98 /* Rethink Test ProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				6EC66A922A5F7BCC00AA1B98 /* Rethink_Test_ProjectTests.swift */,
+				6EC66A942A5F7BCC00AA1B98 /* Info.plist */,
+			);
+			path = "Rethink Test ProjectTests";
+			sourceTree = "<group>";
+		};
+		6EC66A9C2A5F7BCC00AA1B98 /* Rethink Test ProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6EC66A9D2A5F7BCC00AA1B98 /* Rethink_Test_ProjectUITests.swift */,
+				6EC66A9F2A5F7BCC00AA1B98 /* Info.plist */,
+			);
+			path = "Rethink Test ProjectUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6EC66A7C2A5F7BCB00AA1B98 /* Rethink Test Project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EC66AA22A5F7BCC00AA1B98 /* Build configuration list for PBXNativeTarget "Rethink Test Project" */;
+			buildPhases = (
+				6EC66A792A5F7BCB00AA1B98 /* Sources */,
+				6EC66A7A2A5F7BCB00AA1B98 /* Frameworks */,
+				6EC66A7B2A5F7BCB00AA1B98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rethink Test Project";
+			productName = "Rethink Test Project";
+			productReference = 6EC66A7D2A5F7BCB00AA1B98 /* Rethink Test Project.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6EC66A8D2A5F7BCC00AA1B98 /* Rethink Test ProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EC66AA52A5F7BCC00AA1B98 /* Build configuration list for PBXNativeTarget "Rethink Test ProjectTests" */;
+			buildPhases = (
+				6EC66A8A2A5F7BCC00AA1B98 /* Sources */,
+				6EC66A8B2A5F7BCC00AA1B98 /* Frameworks */,
+				6EC66A8C2A5F7BCC00AA1B98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EC66A902A5F7BCC00AA1B98 /* PBXTargetDependency */,
+			);
+			name = "Rethink Test ProjectTests";
+			productName = "Rethink Test ProjectTests";
+			productReference = 6EC66A8E2A5F7BCC00AA1B98 /* Rethink Test ProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6EC66A982A5F7BCC00AA1B98 /* Rethink Test ProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EC66AA82A5F7BCC00AA1B98 /* Build configuration list for PBXNativeTarget "Rethink Test ProjectUITests" */;
+			buildPhases = (
+				6EC66A952A5F7BCC00AA1B98 /* Sources */,
+				6EC66A962A5F7BCC00AA1B98 /* Frameworks */,
+				6EC66A972A5F7BCC00AA1B98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EC66A9B2A5F7BCC00AA1B98 /* PBXTargetDependency */,
+			);
+			name = "Rethink Test ProjectUITests";
+			productName = "Rethink Test ProjectUITests";
+			productReference = 6EC66A992A5F7BCC00AA1B98 /* Rethink Test ProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EC66A752A5F7BCB00AA1B98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					6EC66A7C2A5F7BCB00AA1B98 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					6EC66A8D2A5F7BCC00AA1B98 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 6EC66A7C2A5F7BCB00AA1B98;
+					};
+					6EC66A982A5F7BCC00AA1B98 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 6EC66A7C2A5F7BCB00AA1B98;
+					};
+				};
+			};
+			buildConfigurationList = 6EC66A782A5F7BCB00AA1B98 /* Build configuration list for PBXProject "Rethink Test Project" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6EC66A742A5F7BCB00AA1B98;
+			productRefGroup = 6EC66A7E2A5F7BCB00AA1B98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6EC66A7C2A5F7BCB00AA1B98 /* Rethink Test Project */,
+				6EC66A8D2A5F7BCC00AA1B98 /* Rethink Test ProjectTests */,
+				6EC66A982A5F7BCC00AA1B98 /* Rethink Test ProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6EC66A7B2A5F7BCB00AA1B98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EC66A882A5F7BCB00AA1B98 /* Preview Assets.xcassets in Resources */,
+				6EC66A852A5F7BCB00AA1B98 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EC66A8C2A5F7BCC00AA1B98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EC66A972A5F7BCC00AA1B98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EC66A792A5F7BCB00AA1B98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EC66A832A5F7BCB00AA1B98 /* ContentView.swift in Sources */,
+				6EC66A812A5F7BCB00AA1B98 /* Rethink_Test_ProjectApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EC66A8A2A5F7BCC00AA1B98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EC66A932A5F7BCC00AA1B98 /* Rethink_Test_ProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EC66A952A5F7BCC00AA1B98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EC66A9E2A5F7BCC00AA1B98 /* Rethink_Test_ProjectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6EC66A902A5F7BCC00AA1B98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EC66A7C2A5F7BCB00AA1B98 /* Rethink Test Project */;
+			targetProxy = 6EC66A8F2A5F7BCC00AA1B98 /* PBXContainerItemProxy */;
+		};
+		6EC66A9B2A5F7BCC00AA1B98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EC66A7C2A5F7BCB00AA1B98 /* Rethink Test Project */;
+			targetProxy = 6EC66A9A2A5F7BCC00AA1B98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6EC66AA02A5F7BCC00AA1B98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6EC66AA12A5F7BCC00AA1B98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6EC66AA32A5F7BCC00AA1B98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Rethink Test Project/Preview Content\"";
+				DEVELOPMENT_TEAM = V46DVKDHG4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Rethink Test Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ziontuiasoa.Rethink-Test-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6EC66AA42A5F7BCC00AA1B98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Rethink Test Project/Preview Content\"";
+				DEVELOPMENT_TEAM = V46DVKDHG4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Rethink Test Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ziontuiasoa.Rethink-Test-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6EC66AA62A5F7BCC00AA1B98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V46DVKDHG4;
+				INFOPLIST_FILE = "Rethink Test ProjectTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ziontuiasoa.Rethink-Test-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rethink Test Project.app/Rethink Test Project";
+			};
+			name = Debug;
+		};
+		6EC66AA72A5F7BCC00AA1B98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V46DVKDHG4;
+				INFOPLIST_FILE = "Rethink Test ProjectTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ziontuiasoa.Rethink-Test-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rethink Test Project.app/Rethink Test Project";
+			};
+			name = Release;
+		};
+		6EC66AA92A5F7BCC00AA1B98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V46DVKDHG4;
+				INFOPLIST_FILE = "Rethink Test ProjectUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ziontuiasoa.Rethink-Test-ProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Rethink Test Project";
+			};
+			name = Debug;
+		};
+		6EC66AAA2A5F7BCC00AA1B98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V46DVKDHG4;
+				INFOPLIST_FILE = "Rethink Test ProjectUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ziontuiasoa.Rethink-Test-ProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Rethink Test Project";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6EC66A782A5F7BCB00AA1B98 /* Build configuration list for PBXProject "Rethink Test Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EC66AA02A5F7BCC00AA1B98 /* Debug */,
+				6EC66AA12A5F7BCC00AA1B98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EC66AA22A5F7BCC00AA1B98 /* Build configuration list for PBXNativeTarget "Rethink Test Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EC66AA32A5F7BCC00AA1B98 /* Debug */,
+				6EC66AA42A5F7BCC00AA1B98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EC66AA52A5F7BCC00AA1B98 /* Build configuration list for PBXNativeTarget "Rethink Test ProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EC66AA62A5F7BCC00AA1B98 /* Debug */,
+				6EC66AA72A5F7BCC00AA1B98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EC66AA82A5F7BCC00AA1B98 /* Build configuration list for PBXNativeTarget "Rethink Test ProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EC66AA92A5F7BCC00AA1B98 /* Debug */,
+				6EC66AAA2A5F7BCC00AA1B98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6EC66A752A5F7BCB00AA1B98 /* Project object */;
+}
