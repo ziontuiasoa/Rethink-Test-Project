@@ -23,7 +23,7 @@ class Post: ListItemConvertable {
         self.comments = comments
     }
 
-    func asListItem() -> ListItem {
+    func asListItem(_ additionalItems: [ListItem]? = nil) -> ListItem {
         ListItem(itemType: .post(self), children: comments?.map { $0.asListItem() })
     }
 }

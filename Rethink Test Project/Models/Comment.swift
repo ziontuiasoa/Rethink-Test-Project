@@ -23,9 +23,10 @@ class Comment: ListItemConvertable {
         self.body = body
     }
     
-    func asListItem() -> ListItem {
+    func asListItem(_ additionalItems: [ListItem]? = nil) -> ListItem {
         let email = self.email.asListItem()
-        return ListItem(itemType: .comment(self), children: [email])
+        let body = self.body.asListItem()
+        return ListItem(itemType: .comment(self), children: [email, body])
     }
 }
 

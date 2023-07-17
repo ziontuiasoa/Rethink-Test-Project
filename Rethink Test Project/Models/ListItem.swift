@@ -8,7 +8,7 @@
 import Foundation
 
 protocol ListItemConvertable {
-    func asListItem() -> ListItem
+    func asListItem(_ additionalItems: [ListItem]?) -> ListItem
 }
 
 struct ListItem: Identifiable {
@@ -25,7 +25,7 @@ indirect enum ItemType {
 }
 
 extension String: ListItemConvertable {
-    func asListItem() -> ListItem {
-        ListItem(itemType: .info(self))
+    func asListItem(_ additionalItems: [ListItem]? = nil) -> ListItem {
+        ListItem(itemType: .info(self), children: additionalItems)
     }
 }

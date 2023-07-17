@@ -19,6 +19,10 @@
 		6EC66A9E2A5F7BCC00AA1B98 /* Rethink_Test_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC66A9D2A5F7BCC00AA1B98 /* Rethink_Test_ProjectUITests.swift */; };
 		6EC66AAF2A5F894C00AA1B98 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC66AAE2A5F894C00AA1B98 /* User.swift */; };
 		6EC66AB42A5F8B2700AA1B98 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC66AB32A5F8B2700AA1B98 /* ViewModel.swift */; };
+		E2124BBB2A65B0DB00700AF5 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2124BBA2A65B0DB00700AF5 /* CustomButton.swift */; };
+		E2124BBD2A65B15B00700AF5 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2124BBC2A65B15B00700AF5 /* UserView.swift */; };
+		E2124BBF2A65B18B00700AF5 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2124BBE2A65B18B00700AF5 /* PostView.swift */; };
+		E2124BC12A65B1AC00700AF5 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2124BC02A65B1AC00700AF5 /* CommentView.swift */; };
 		E526F3032A64A544003A937E /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = E526F3022A64A544003A937E /* Realm */; };
 		E526F3052A64A544003A937E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E526F3042A64A544003A937E /* RealmSwift */; };
 		E5EB36512A6491F400080979 /* Database Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EB36502A6491F400080979 /* Database Controller.swift */; };
@@ -60,6 +64,10 @@
 		6EC66A9F2A5F7BCC00AA1B98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EC66AAE2A5F894C00AA1B98 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6EC66AB32A5F8B2700AA1B98 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		E2124BBA2A65B0DB00700AF5 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		E2124BBC2A65B15B00700AF5 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		E2124BBE2A65B18B00700AF5 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		E2124BC02A65B1AC00700AF5 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
 		E5EB36502A6491F400080979 /* Database Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database Controller.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,14 +122,9 @@
 			isa = PBXGroup;
 			children = (
 				6EC66A802A5F7BCB00AA1B98 /* Rethink_Test_ProjectApp.swift */,
-				6EC66AAE2A5F894C00AA1B98 /* User.swift */,
-				6E6EAA022A6254CA00160AB0 /* Post.swift */,
-				6E6EAA0F2A62553D00160AB0 /* Comment.swift */,
-				6E6EAA0A2A6254FB00160AB0 /* ListItem.swift */,
-				6EC66AB32A5F8B2700AA1B98 /* ViewModel.swift */,
-				6EC66A822A5F7BCB00AA1B98 /* ContentView.swift */,
-				6E6EAA1A2A626B7900160AB0 /* NetworkController.swift */,
-				E5EB36502A6491F400080979 /* Database Controller.swift */,
+				E2124BC22A65B1CC00700AF5 /* Models */,
+				E2124BC32A65B1E900700AF5 /* Views */,
+				E2124BC42A65B21200700AF5 /* Controllers */,
 				6EC66A842A5F7BCB00AA1B98 /* Assets.xcassets */,
 				6EC66A892A5F7BCB00AA1B98 /* Info.plist */,
 				6EC66A862A5F7BCB00AA1B98 /* Preview Content */,
@@ -153,6 +156,47 @@
 				6EC66A9F2A5F7BCC00AA1B98 /* Info.plist */,
 			);
 			path = "Rethink Test ProjectUITests";
+			sourceTree = "<group>";
+		};
+		E2124BC22A65B1CC00700AF5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6EC66AAE2A5F894C00AA1B98 /* User.swift */,
+				6E6EAA022A6254CA00160AB0 /* Post.swift */,
+				6E6EAA0F2A62553D00160AB0 /* Comment.swift */,
+				6E6EAA0A2A6254FB00160AB0 /* ListItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E2124BC32A65B1E900700AF5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E2124BC52A65B23300700AF5 /* ViewModels */,
+				6EC66A822A5F7BCB00AA1B98 /* ContentView.swift */,
+				E2124BBC2A65B15B00700AF5 /* UserView.swift */,
+				E2124BBE2A65B18B00700AF5 /* PostView.swift */,
+				E2124BC02A65B1AC00700AF5 /* CommentView.swift */,
+				E2124BBA2A65B0DB00700AF5 /* CustomButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E2124BC42A65B21200700AF5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E6EAA1A2A626B7900160AB0 /* NetworkController.swift */,
+				E5EB36502A6491F400080979 /* Database Controller.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E2124BC52A65B23300700AF5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6EC66AB32A5F8B2700AA1B98 /* ViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,14 +335,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2124BBD2A65B15B00700AF5 /* UserView.swift in Sources */,
+				E2124BC12A65B1AC00700AF5 /* CommentView.swift in Sources */,
 				6E6EAA0B2A6254FB00160AB0 /* ListItem.swift in Sources */,
 				6E6EAA1B2A626B7900160AB0 /* NetworkController.swift in Sources */,
 				6EC66A832A5F7BCB00AA1B98 /* ContentView.swift in Sources */,
 				6EC66A812A5F7BCB00AA1B98 /* Rethink_Test_ProjectApp.swift in Sources */,
+				E2124BBB2A65B0DB00700AF5 /* CustomButton.swift in Sources */,
 				6E6EAA102A62553D00160AB0 /* Comment.swift in Sources */,
 				E5EB36512A6491F400080979 /* Database Controller.swift in Sources */,
 				6EC66AB42A5F8B2700AA1B98 /* ViewModel.swift in Sources */,
 				6EC66AAF2A5F894C00AA1B98 /* User.swift in Sources */,
+				E2124BBF2A65B18B00700AF5 /* PostView.swift in Sources */,
 				6E6EAA032A6254CA00160AB0 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

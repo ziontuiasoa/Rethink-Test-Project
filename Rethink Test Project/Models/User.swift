@@ -21,7 +21,7 @@ class User: ListItemConvertable {
         self.posts = posts
     }
     
-    func asListItem() -> ListItem {
+    func asListItem(_ additionalItems: [ListItem]? = nil) -> ListItem {
         ListItem(itemType: .user(self), children: posts?.map { $0.asListItem() })
     }
 }
