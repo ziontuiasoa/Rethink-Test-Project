@@ -9,6 +9,7 @@ import Foundation
 import RealmSwift
 
 class Comment: Object, ListItemConvertable, Codable {
+    
     var id: Int
     var postId: Int
     var name: String
@@ -22,7 +23,7 @@ class Comment: Object, ListItemConvertable, Codable {
         self.name = name
         self.email = email
         self.comment = comment
-        self.body = body 
+        self.body = body
     }
     
     func asListItem() -> ListItem {
