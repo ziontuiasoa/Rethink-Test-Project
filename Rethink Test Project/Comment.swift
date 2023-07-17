@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import RealmSwift
 
-struct Comment: ListItemConvertable, Codable {
+class Comment: Object, ListItemConvertable, Codable {
     var id: Int
     var postId: Int
     var name: String
@@ -15,6 +16,15 @@ struct Comment: ListItemConvertable, Codable {
     var comment: String
     var body: String
 
+    init(id: Int, postId: Int, name: String, email: String, comment: String, body: String) {
+        self.id = id
+        self.postId = postId
+        self.name = name
+        self.email = email
+        self.comment = comment
+        self.body = body
+    }
+    
     func asListItem() -> ListItem {
         let email = self.email.asListItem()
         return ListItem(itemType: .comment(self), children: [email])
