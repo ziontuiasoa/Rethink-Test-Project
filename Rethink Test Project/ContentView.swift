@@ -9,13 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var viewModel = ViewModel(users: User.samples, posts: Post.samples, comments: Comment.sample)
+    @ObservedObject var viewModel = ViewModel()
    
     var body: some View {
-        List(viewModel.users.map { $0.asListItem() }, children: \.children) { item in
+        List(viewModel.users?.map { $0.asListItem() } ?? [], children: \.children) { item in
             switch item.itemType {
             case .user(let user):
-                UserView(user: user)
+//                UserView(user: user)
+                Text(user.name)
             case .post(let post):
                 Text(post.title)
             case .comment(let comment):
@@ -23,8 +24,14 @@ struct ContentView: View {
             case .info(let info):
                 Text(info)
             }
-        }.listStyle(InsetGroupedListStyle())
+        }
+        .listStyle(InsetGroupedListStyle())
         .listRowSeparator(.hidden)
+        .task {
+            await viewModel.fetchData()
+        }.onTapGesture {
+            print("tapped")
+        }
     }
 }
 

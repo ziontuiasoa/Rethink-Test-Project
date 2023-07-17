@@ -6,7 +6,7 @@
 import Foundation
 import RealmSwift
 
-class User: Object, ListItemConvertable, Codable {
+class User: ListItemConvertable {
     var id: Int
     var name: String
     var username: String
@@ -31,4 +31,11 @@ extension User {
         User(id: 1, name: "bob", username: "username", email: "email", posts: Post.samples),
         User(id: 1, name: "amy", username: "username", email: "email", posts: Post.samples)
     ]
+}
+
+struct UserResponse: Codable {
+    var id: Int
+    var name: String
+    var username: String
+    var email: String
 }

@@ -23,3 +23,9 @@ indirect enum ItemType {
     case comment(Comment)
     case info(String)
 }
+
+extension String: ListItemConvertable {
+    func asListItem() -> ListItem {
+        ListItem(itemType: .info(self))
+    }
+}

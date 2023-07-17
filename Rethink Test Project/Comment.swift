@@ -8,21 +8,18 @@
 import Foundation
 import RealmSwift
 
-class Comment: Object, ListItemConvertable, Codable {
-    
-    var id: Int
+class Comment: ListItemConvertable {
     var postId: Int
+    var id: Int
     var name: String
     var email: String
-    var comment: String
     var body: String
 
-    init(id: Int, postId: Int, name: String, email: String, comment: String, body: String) {
-        self.id = id
+    init(postId: Int, id: Int, name: String, email: String, body: String) {
         self.postId = postId
+        self.id = id
         self.name = name
         self.email = email
-        self.comment = comment
         self.body = body
     }
     
@@ -33,11 +30,13 @@ class Comment: Object, ListItemConvertable, Codable {
 }
 
 extension Comment {
-    static let sample = [Comment(id: 1, postId: 1, name: "comment name", email: "email", comment: "comment", body: "comment body")]
+    static let sample = [Comment(postId: 1, id: 1, name: "comment name", email: "email", body: "comment body")]
 }
 
-extension String: ListItemConvertable {
-    func asListItem() -> ListItem {
-        ListItem(itemType: .info(self))
-    }
+struct CommentResponse: Codable {
+    var postId: Int
+    var id: Int
+    var name: String
+    var email: String
+    var body: String
 }

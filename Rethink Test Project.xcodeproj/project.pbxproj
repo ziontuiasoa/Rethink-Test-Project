@@ -10,7 +10,7 @@
 		6E6EAA032A6254CA00160AB0 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6EAA022A6254CA00160AB0 /* Post.swift */; };
 		6E6EAA0B2A6254FB00160AB0 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6EAA0A2A6254FB00160AB0 /* ListItem.swift */; };
 		6E6EAA102A62553D00160AB0 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6EAA0F2A62553D00160AB0 /* Comment.swift */; };
-		6E6EAA1B2A626B7900160AB0 /* Network Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6EAA1A2A626B7900160AB0 /* Network Controller.swift */; };
+		6E6EAA1B2A626B7900160AB0 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6EAA1A2A626B7900160AB0 /* NetworkController.swift */; };
 		6EC66A812A5F7BCB00AA1B98 /* Rethink_Test_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC66A802A5F7BCB00AA1B98 /* Rethink_Test_ProjectApp.swift */; };
 		6EC66A832A5F7BCB00AA1B98 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC66A822A5F7BCB00AA1B98 /* ContentView.swift */; };
 		6EC66A852A5F7BCB00AA1B98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EC66A842A5F7BCB00AA1B98 /* Assets.xcassets */; };
@@ -45,7 +45,7 @@
 		6E6EAA022A6254CA00160AB0 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		6E6EAA0A2A6254FB00160AB0 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		6E6EAA0F2A62553D00160AB0 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
-		6E6EAA1A2A626B7900160AB0 /* Network Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network Controller.swift"; sourceTree = "<group>"; };
+		6E6EAA1A2A626B7900160AB0 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		6EC66A7D2A5F7BCB00AA1B98 /* Rethink Test Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rethink Test Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EC66A802A5F7BCB00AA1B98 /* Rethink_Test_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rethink_Test_ProjectApp.swift; sourceTree = "<group>"; };
 		6EC66A822A5F7BCB00AA1B98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -120,11 +120,11 @@
 				6E6EAA0A2A6254FB00160AB0 /* ListItem.swift */,
 				6EC66AB32A5F8B2700AA1B98 /* ViewModel.swift */,
 				6EC66A822A5F7BCB00AA1B98 /* ContentView.swift */,
-				6E6EAA1A2A626B7900160AB0 /* Network Controller.swift */,
+				6E6EAA1A2A626B7900160AB0 /* NetworkController.swift */,
+				E5EB36502A6491F400080979 /* Database Controller.swift */,
 				6EC66A842A5F7BCB00AA1B98 /* Assets.xcassets */,
 				6EC66A892A5F7BCB00AA1B98 /* Info.plist */,
 				6EC66A862A5F7BCB00AA1B98 /* Preview Content */,
-				E5EB36502A6491F400080979 /* Database Controller.swift */,
 			);
 			path = "Rethink Test Project";
 			sourceTree = "<group>";
@@ -292,7 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E6EAA0B2A6254FB00160AB0 /* ListItem.swift in Sources */,
-				6E6EAA1B2A626B7900160AB0 /* Network Controller.swift in Sources */,
+				6E6EAA1B2A626B7900160AB0 /* NetworkController.swift in Sources */,
 				6EC66A832A5F7BCB00AA1B98 /* ContentView.swift in Sources */,
 				6EC66A812A5F7BCB00AA1B98 /* Rethink_Test_ProjectApp.swift in Sources */,
 				6E6EAA102A62553D00160AB0 /* Comment.swift in Sources */,

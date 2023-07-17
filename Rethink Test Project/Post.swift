@@ -8,7 +8,7 @@
 import Foundation
 import RealmSwift
 
-class Post: Object, ListItemConvertable, Codable {
+class Post: ListItemConvertable {
     let userId: Int
     let id: Int
     let title: String
@@ -32,4 +32,11 @@ extension Post {
     static let samples = [
         Post(userId: 1, id: 1, title: "title", body: "body test", comments: Comment.sample)
     ]
+}
+
+struct PostReponse: Codable {
+    let userId: Int
+    let id: Int
+    let title: String
+    let body: String
 }
