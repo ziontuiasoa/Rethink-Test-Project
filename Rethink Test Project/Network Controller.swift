@@ -8,10 +8,9 @@
 import Foundation
 
 class NetworkController {
-    static let shared = NetworkController()
+//    static let shared = NetworkController()
 
     private let baseURL = "https://jsonplaceholder.typicode.com"
-    private let itemType: ItemType
     private let session: URLSession
 
     private init() {
@@ -20,42 +19,70 @@ class NetworkController {
         session = URLSession(configuration: configuration)
     }
     
-    func buildURL(for itemType: ItemType) throws -> URL {
+    enum Endpoint {
+        case user
+        case post
+        case comment
+    }
+
+    func buildURL(for endpoint: Endpoint) throws -> URL {
         var urlString: String
-        switch itemType {
+        switch endpoint {
         case .user:
             urlString = baseURL + "/users"
         case .post:
             urlString = baseURL + "/posts"
         case .comment:
             urlString = baseURL + "/comments"
-        default:
-            break
         }
-        return try URL(string: urlString)
-    }
-
-    func fetchData<T: Decodable>(for itemType: ItemType, completion: (Result, Error)) {
-        let task = session.dataTask(with: url) { data, response, error in
-            if let error = error {
-                completion(.failure(error))
-                return
-            }
-
-            guard let data = data else {
-                completion(.failure(NetworkError.noData))
-            }
-
-            do {
-                let decodedData = try JSONDecoder().decode(T.self, from: data)
-                completion(.success(decodedData))
-            } catch {
-                completion(.failure(error))
-            }
+        guard let url = URL(string: urlString) else {
+            throw NetworkError.noData
         }
-        task.resume
+        return url
     }
-}
+    
+    func fetchData(for endpoint: Endpoint) async throws -> [Any] {
+        let url = try buildURL(for: endpoint)
+        // Use the async variant of URLSession to fetch data
+        // Code might suspend here
+        let (data, _) = try await URLSession.shared.data(from: url)
+
+        // Parse the JSON data
+        
+        switch endpoint {
+        case .user:
+            let dataPoint = try JSONDecoder().decode(User.self, from: data)
+        case .post:
+            Post.self
+        case .comment:
+            Comment.self
+        }
+        
+        return dataPoint.result
+    }
+//
+//    func fetchData<T: Decodable>(for endpoint: Endpoint, completion: (Result<T, Error>)) {
+//        let url = buildURL(for: endpoint)
+//        let task = session.dataTask(with: url) { data, response, error in
+//            if let error = error {
+//
+//                return
+//            }
+//
+//            guard let data = data else {
+//                completion(.failure(NetworkError.noData))
+//            }
+//
+//            do {
+//                let decodedData = try JSONDecoder().decode(T.self, from: data)
+//                completion(.success(decodedData))
+//            } catch {
+//                completion(.failure(error))
+//            }
+//        }
+//        task.resume
+//    }
+//}
 
 enum NetworkError: Error {
     case noData

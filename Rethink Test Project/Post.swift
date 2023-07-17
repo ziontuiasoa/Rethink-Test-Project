@@ -6,13 +6,22 @@
 //
 
 import Foundation
+import RealmSwift
 
-struct Post: ListItemConvertable, Codable {
-    let userID: Int
+class Post: Object, ListItemConvertable, Codable {
+    let userId: Int
     let id: Int
     let title: String
     let body: String
     var comments: [Comment]?
+    
+    init(userId: Int, id: Int, title: String, body: String, comments: [Comment]?) {
+        self.userId = userId
+        self.id = id
+        self.title = title
+        self.body = body
+        self.comments = comments
+    }
 
     func asListItem() -> ListItem {
         ListItem(itemType: .post(self), children: comments?.map { $0.asListItem() })
@@ -21,6 +30,6 @@ struct Post: ListItemConvertable, Codable {
 
 extension Post {
     static let samples = [
-        Post(userID: 1, id: 1, title: "title", body: "body test", comments: Comment.sample)
+        Post(userId: 1, id: 1, title: "title", body: "body test", comments: Comment.sample)
     ]
 }

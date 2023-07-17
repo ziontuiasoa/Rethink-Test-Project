@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,9 @@
 		6EC66A9E2A5F7BCC00AA1B98 /* Rethink_Test_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC66A9D2A5F7BCC00AA1B98 /* Rethink_Test_ProjectUITests.swift */; };
 		6EC66AAF2A5F894C00AA1B98 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC66AAE2A5F894C00AA1B98 /* User.swift */; };
 		6EC66AB42A5F8B2700AA1B98 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC66AB32A5F8B2700AA1B98 /* ViewModel.swift */; };
+		E526F3032A64A544003A937E /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = E526F3022A64A544003A937E /* Realm */; };
+		E526F3052A64A544003A937E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E526F3042A64A544003A937E /* RealmSwift */; };
+		E5EB36512A6491F400080979 /* Database Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EB36502A6491F400080979 /* Database Controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,7 @@
 		6EC66A9F2A5F7BCC00AA1B98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EC66AAE2A5F894C00AA1B98 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6EC66AB32A5F8B2700AA1B98 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		E5EB36502A6491F400080979 /* Database Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database Controller.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E526F3052A64A544003A937E /* RealmSwift in Frameworks */,
+				E526F3032A64A544003A937E /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,10 +120,11 @@
 				6E6EAA0A2A6254FB00160AB0 /* ListItem.swift */,
 				6EC66AB32A5F8B2700AA1B98 /* ViewModel.swift */,
 				6EC66A822A5F7BCB00AA1B98 /* ContentView.swift */,
+				6E6EAA1A2A626B7900160AB0 /* Network Controller.swift */,
 				6EC66A842A5F7BCB00AA1B98 /* Assets.xcassets */,
 				6EC66A892A5F7BCB00AA1B98 /* Info.plist */,
 				6EC66A862A5F7BCB00AA1B98 /* Preview Content */,
-				6E6EAA1A2A626B7900160AB0 /* Network Controller.swift */,
+				E5EB36502A6491F400080979 /* Database Controller.swift */,
 			);
 			path = "Rethink Test Project";
 			sourceTree = "<group>";
@@ -164,6 +171,10 @@
 			dependencies = (
 			);
 			name = "Rethink Test Project";
+			packageProductDependencies = (
+				E526F3022A64A544003A937E /* Realm */,
+				E526F3042A64A544003A937E /* RealmSwift */,
+			);
 			productName = "Rethink Test Project";
 			productReference = 6EC66A7D2A5F7BCB00AA1B98 /* Rethink Test Project.app */;
 			productType = "com.apple.product-type.application";
@@ -235,6 +246,9 @@
 				Base,
 			);
 			mainGroup = 6EC66A742A5F7BCB00AA1B98;
+			packageReferences = (
+				E526F3012A64A544003A937E /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 6EC66A7E2A5F7BCB00AA1B98 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -282,6 +296,7 @@
 				6EC66A832A5F7BCB00AA1B98 /* ContentView.swift in Sources */,
 				6EC66A812A5F7BCB00AA1B98 /* Rethink_Test_ProjectApp.swift in Sources */,
 				6E6EAA102A62553D00160AB0 /* Comment.swift in Sources */,
+				E5EB36512A6491F400080979 /* Database Controller.swift in Sources */,
 				6EC66AB42A5F8B2700AA1B98 /* ViewModel.swift in Sources */,
 				6EC66AAF2A5F894C00AA1B98 /* User.swift in Sources */,
 				6E6EAA032A6254CA00160AB0 /* Post.swift in Sources */,
@@ -446,7 +461,7 @@
 				DEVELOPMENT_TEAM = V46DVKDHG4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Rethink Test Project/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,7 +483,7 @@
 				DEVELOPMENT_TEAM = V46DVKDHG4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Rethink Test Project/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -488,7 +503,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V46DVKDHG4;
 				INFOPLIST_FILE = "Rethink Test ProjectTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -510,7 +525,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V46DVKDHG4;
 				INFOPLIST_FILE = "Rethink Test ProjectTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -604,6 +619,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E526F3012A64A544003A937E /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.39.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E526F3022A64A544003A937E /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E526F3012A64A544003A937E /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		E526F3042A64A544003A937E /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E526F3012A64A544003A937E /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6EC66A752A5F7BCB00AA1B98 /* Project object */;
 }
